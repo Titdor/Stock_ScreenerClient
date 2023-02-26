@@ -23,7 +23,7 @@ function StockContainer() {
           event.preventDefault();
           console.log("is Loading");
           await axios.post(
-            "http://localhost:3001/postSearchData", 
+            "https://stockscreenermernapi.onrender.com/postSearchData", 
             { search: text },
             {
               headers: {
@@ -34,7 +34,7 @@ function StockContainer() {
             setStockData(res.data)})
             
           await axios.post(
-            "http://localhost:3001/postSearchGraphData", 
+            "https://stockscreenermernapi.onrender.com/postSearchGraphData", 
               { search: text },
               {
                 headers: {
@@ -52,7 +52,7 @@ function StockContainer() {
     /* POST REQUEST FOR GRAPH DATA AND TABLE DATA */
     async function handleClick() {
       await axios.post(
-        "http://localhost:3001/postSearchData", 
+        "https://stockscreenermernapi.onrender.com/postSearchData", 
         { search: text },
         {
           headers: {
@@ -62,7 +62,7 @@ function StockContainer() {
       .then(res=>setStockData(res.data))
         
       await axios.post(
-        "http://localhost:3001/postSearchGraphData", 
+        "https://stockscreenermernapi.onrender.com/postSearchGraphData", 
           { search: text },
           {
             headers: {
@@ -78,14 +78,14 @@ function StockContainer() {
     /* GET REQUEST FOR GRAPH DATA AND TABLE DATA */
     useEffect(()=> {
         async function getData() {
-            await axios.get("http://localhost:3001/getSearchData")
+            await axios.get("https://stockscreenermernapi.onrender.com/getSearchData")
             .then(res => {
                 setStockData(res.data);
             });
         }
 
         async function getGraphData() {
-            await axios.get("http://localhost:3001/getSearchGraphData")
+            await axios.get("https://stockscreenermernapi.onrender.com/getSearchGraphData")
             .then(res=> {
                 setGraphData(res.data.values);
             });
