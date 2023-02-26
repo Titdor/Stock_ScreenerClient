@@ -1,0 +1,94 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+/* TABLE DATA*/
+table, th, td{
+    border: 1px solid black;
+    font-size: 20px;
+    text-align: center;
+    margin: auto;
+}
+  span{
+    margin-bottom: -20px;
+  }
+
+
+/*Graph*/
+.graph {
+    width: 100%;
+    height: 100%;
+    margin: 100px 500px auto;
+}
+
+/* Logo */
+
+.logo{
+    display: flex;
+    margin-bottom: 50px;
+    padding-bottom: 80px;
+    background: #232526;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #414345, #232526);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #414345, #232526); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    color: white;
+}
+
+.logo img {
+    margin: 20px;
+    width: 5%;
+    height: 5%;
+}
+
+.logo h2 {
+    display: inline-block;
+    font-size: 50px;
+    margin-left: 40px;
+    font-family: 'Barlow Condensed', sans-serif;
+}
+
+.logo h3 {
+    position: absolute;
+    font-size: 20px;
+    margin-top: 100px;
+    margin-left: 40px;
+    font-family: 'Barlow Condensed', sans-serif;
+}
+.logo h4 {
+    position: absolute;
+    font-size: 30px;
+    margin-top: 150px;
+    margin-left: 40px;
+    font-family: 'Barlow Condensed', sans-serif;
+}
+
+/* Header */
+.header {
+    display: flex;
+}
+
+.header form {
+    margin: auto;
+}
+
+.header input {
+    width: 700px;
+    height: 60px;
+    font-size: 20px;
+    border-radius: 10px;
+    padding-left: 10px;
+}
+
+.header h1 {
+    font-size: 50px;
+}
+
+.search-icon {
+    position: absolute;
+    font-size: 28.5px;
+    margin-left: 650px;
+    margin-top:17px;
+}
+
+.search-icon:hover {
+    cursor: pointer;
+}
